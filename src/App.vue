@@ -6,6 +6,7 @@
         <router-view/>
       </div>
     </div>
+    <ProfilesComponent/>
     <FooterComponent/>
   </div>
 </template>
@@ -13,11 +14,13 @@
 <script>
 // @ is an alias to /src
 import NavbarComponent from '@/components/NavbarComponent.vue'
+import ProfilesComponent from '@/components/ProfilesComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
 export default {
   components: {
     NavbarComponent,
+    ProfilesComponent,
     FooterComponent,
   }
 }
