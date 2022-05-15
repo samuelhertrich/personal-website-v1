@@ -6,16 +6,19 @@
         <router-view/>
       </div>
     </div>
+    <FooterComponent/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import NavbarComponent from '@/components/NavbarComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 
 export default {
   components: {
     NavbarComponent,
+    FooterComponent,
   }
 }
 </script>
@@ -34,6 +37,9 @@ export default {
   --nav-height-7: 80px;
 
   --burger-menu-height: 60px;
+
+  --footer-height-6s: 100px;
+  --footer-height-6l: 80px;
 
   --padding-6l: 0 20px;
   --padding-7: 0 40px;
