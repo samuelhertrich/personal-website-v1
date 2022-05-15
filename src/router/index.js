@@ -10,6 +10,14 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  {
+    path: '/data-protection',
+    name: 'data-protection',
+    meta: {
+      title: 'data protection • samuelhertrich'
+    },
+    component: () => import('../views/DataProtectionView.vue')
+  },
 ]
 
 const router = new VueRouter({
