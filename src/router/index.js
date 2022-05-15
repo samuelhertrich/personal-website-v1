@@ -11,6 +11,14 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/imprint',
+    name: 'imprint',
+    meta: {
+      title: 'imprint • samuelhertrich'
+    },
+    component: () => import('../views/ImprintView.vue')
+  },
+  {
     path: '/data-protection',
     name: 'data-protection',
     meta: {
