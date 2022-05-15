@@ -162,7 +162,7 @@ section h1 + div {
     }
 
     .main-container {
-        min-height: calc(100vh - var(--nav-height-6l) - var(--footer-height-6l));
+        min-height: calc(100vh - var(--nav-height-6l) - var(--footer-height-6l) - 20px);
         margin-top: var(--nav-height-6l);
     }
 
@@ -180,7 +180,7 @@ section h1 + div {
     }
 
     .main-container {
-        min-height: calc(100vh - var(--nav-height-7) - var(--footer-height-6l));
+        min-height: calc(100vh - var(--nav-height-7) - var(--footer-height-6l) - 20px);
         margin-top: var(--nav-height-7);
     }
 
