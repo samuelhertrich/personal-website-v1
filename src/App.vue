@@ -35,6 +35,8 @@ export default {
   
     font-size: 16px;
 
+    --profiles-svg-size: 20px;
+
     --nav-height-6s: 50px;
     --nav-height-6l: 60px;
     --nav-height-7: 80px;
@@ -50,6 +52,9 @@ export default {
     --padding-9: 0 80px;
 
     --section-margin: 100px;
+    --footer-margin-bottom-6l: 20px;
+
+    --border-radius: 1px;
 
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'B612 Mono', monospace;
@@ -60,6 +65,9 @@ export default {
     --accent-color-100: rgba(34, 209, 238, 1);
     --accent-color-50: rgba(34, 209, 238, .5);
     --accent-color-500: #0B102D;
+
+    --type-writer-duration: 4s;
+    --type-writer-delay: 1s;
 
 }
 
@@ -103,6 +111,7 @@ li {
 }
 
 .anchor{
+    height: 100px;
     display: block;
     visibility: hidden;
 }
@@ -147,7 +156,7 @@ section h1 + div {
     }
 
     .main-container {
-        min-height: calc(100vh - var(--nav-height-6s) - var(--footer-height-6s) - var(--burger-menu-height));
+        min-height: calc(100vh - var(--nav-height-6s) - var(--footer-height-6s) - var(--burger-menu-height) - var(--profiles-svg-size));
         margin-top: var(--nav-height-6s);
     }
 
@@ -165,7 +174,7 @@ section h1 + div {
     }
 
     .main-container {
-        min-height: calc(100vh - var(--nav-height-6l) - var(--footer-height-6l) - 20px);
+        min-height: calc(100vh - var(--nav-height-6l) - var(--footer-height-6l) - var(--footer-margin-bottom-6l) - var(--profiles-svg-size));
         margin-top: var(--nav-height-6l);
     }
 
@@ -183,7 +192,7 @@ section h1 + div {
     }
 
     .main-container {
-        min-height: calc(100vh - var(--nav-height-7) - var(--footer-height-6l) - 20px);
+        min-height: calc(100vh - var(--nav-height-7) - var(--footer-height-6l) - var(--footer-margin-bottom-6l) - var(--profiles-svg-size));
         margin-top: var(--nav-height-7);
     }
 
