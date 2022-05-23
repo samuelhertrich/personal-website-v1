@@ -65,7 +65,7 @@ footer div {
 
     footer {
         height: var(--footer-height-6l);
-        margin-bottom: 20px;
+        margin-bottom: var(--footer-margin-bottom-6l);
     }
 
     footer ul li {
