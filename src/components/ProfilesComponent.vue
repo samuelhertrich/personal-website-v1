@@ -43,8 +43,8 @@ export default {
 .profiles-links a svg,
 .contact-email a svg {
     fill: var(--primary-color);
-    height: 20px;
-    width: 20px;
+    height: var(--profiles-svg-size);
+    width: var(--profiles-svg-size);
 }
 
 .contact-email a svg path {
@@ -90,13 +90,12 @@ export default {
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1199px) {
 
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+    .profiles-links,
+    .contact-email {
+        height: var(--profiles-svg-size);
+    }
 
 }
 
