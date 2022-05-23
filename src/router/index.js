@@ -26,6 +26,14 @@ const routes = [
     },
     component: () => import('../views/DataProtectionView.vue')
   },
+  {
+    path: '/*',
+    name: '404',
+    meta: {
+      title: '404 • samuelhertrich'
+    },
+    component: () => import('../views/404View.vue')
+  },
 ]
 
 const router = new VueRouter({
