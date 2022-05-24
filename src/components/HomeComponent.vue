@@ -29,7 +29,7 @@
                     </ul>
                 </div>
                 <div class="picture">
-                    <img src="../assets/picture.png">
+                    <img src="">
                 </div>
             </div>
         </section>
