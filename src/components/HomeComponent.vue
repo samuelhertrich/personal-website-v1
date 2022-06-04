@@ -29,7 +29,7 @@
                     </ul>
                 </div>
                 <div class="picture">
-                    <img src="">
+                    <img src="../assets/picture.jpg">
                 </div>
             </div>
         </section>
@@ -74,9 +74,9 @@ export default {
     data () {
         return {
             projects: [
-                { imgUrl: "", name: "personal website", links: { website: "https://samuelhertrich.com", github: "https://github.com/samuelhertrich/personal-website-v1" }, tags: [ "vue.js" ]},
-                { imgUrl: "", name: "studentenapartments", links: { website: "https://studentenapartments.de", github: "" }, tags: [ "wordpress" ]},
-                { imgUrl: "", name: "casa bella", links: { website: "http://casabella-in.de", github: "" }, tags: [ "bootstrap", "html", "css" ]},
+                { imgUrl: require("../assets/personal.jpg"), name: "personal website", links: { website: "https://samuelhertrich.com", github: "https://github.com/samuelhertrich/personal-website-v1" }, tags: [ "vue.js" ]},
+                { imgUrl: require("../assets/staps.jpg"), name: "studentenapartments", links: { website: "https://studentenapartments.de", github: "" }, tags: [ "wordpress" ]},
+                { imgUrl: require("../assets/cb.jpg"), name: "casa bella", links: { website: "http://casabella-in.de", github: "" }, tags: [ "bootstrap", "html", "css" ]},
             ]
         }
     },
