@@ -8,6 +8,7 @@
     </div>
     <ProfilesComponent/>
     <FooterComponent/>
+    <CookieBannerComponent/>
   </div>
 </template>
 
@@ -16,12 +17,14 @@
 import NavbarComponent from '@/components/NavbarComponent.vue'
 import ProfilesComponent from '@/components/ProfilesComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import CookieBannerComponent from '@/components/CookieBannerComponent.vue'
 
 export default {
   components: {
     NavbarComponent,
     ProfilesComponent,
     FooterComponent,
+    CookieBannerComponent
   }
 }
 </script>
