@@ -1,6 +1,6 @@
 <template>
     <div class="cookie-banner" id="cookie-banner">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, alias sapiente iure sit dignissimos odit dolorum incidunt rem, impedit necessitatibus, nemo totam perferendis modi quae nobis aperiam quaerat? Tempore, quo?</p>
+        <p>this website uses cookies for a better user experience. by using this website you accept to these cookies.</p>
         <div>
             <div v-on:click="closeCookieBanner" id="closeIcon" class="accept">accept</div>
             <router-link to="/data-protection"><a>data protection</a></router-link>
