@@ -5,6 +5,10 @@ on:
     branches:
       - develop
 
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
 jobs:
   docker-build-and-push:
     runs-on: ubuntu-latest
