@@ -1,8 +1,6 @@
 # 1. Basis-Image für den Build verwenden
 FROM --platform=linux/amd64 node:18 AS build
 
-LABEL org.opencontainers.image.source https://github.com/samuelhertrich/personal-website-v1
-
 # 2. Arbeitsverzeichnis erstellen
 WORKDIR /app
 
