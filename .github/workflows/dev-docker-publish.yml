@@ -1,38 +1,11 @@
-name: Build and publish
+name: Dev Docker Build and Push
 
 on:
-  pull_request:
-    branches:
-      - develop
   push:
     branches:
       - develop
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
-
-jobs:
-
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build Application
-        run: npm run build
-
-  docker-build-and-push:
+docker-build-and-push:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -73,4 +46,3 @@ jobs:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
-  
