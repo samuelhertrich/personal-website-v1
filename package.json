@@ -10,8 +10,9 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "postcss": "^8.4.31",
-    "vue": "^2.7.16",
-    "vue-router": "^3.5.1",
+    "vue": "^3.0.0",
+    "vue-template-compiler": "^3.0.0",
+    "vue-router": "^4.0.0",
     "ws": "^8.17.1"
   },
   "devDependencies": {
